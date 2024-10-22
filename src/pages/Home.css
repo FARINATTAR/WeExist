@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Kazimir:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/fonts/ProximaNova-Regular.woff2') format('woff2'),
+         url('/fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+.hero-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFBE9;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Ensures responsiveness */
+    max-width: 800px; /* Avoids it getting too wide */
+}
+
+.overlay-text h1 {
+    font-family: 'Kazimir', serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.overlay-text p {
+    font-size: 1.5rem;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3F72AF; /* Blue */
+    color: #F9F7F7; /* Light Gray */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #112D4E; /* Dark Blue */
+}
+
+/* Hero Content Section */
+.hero-content {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #F9F7F7; /* Light Gray */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.hero-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Page Background Color for the Hero Content Section */
+.hero-section-background {
+    background-color: #DBE2EF; /* Light Blue */
+    padding: 50px 20px;
+    position: relative;
+}
+
+/* Animation for the Hero Content Box */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section Background */
+.hero-section-background {
+    background-color: #DBE2EF; /* Light Blue */
+    padding: 60px 50px;
+    text-align: center;
+    position: relative;
+}
+
+/* Hero Content Box */
+.hero-content {
+    background-color: #F9F7F7; /* Light Gray */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Content Box */
+.hero-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Style */
+.hero-content h1 {
+    font-family: 'Kazimir', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #112D4E; /* Dark Blue */
+}
+
+/* Paragraph Style */
+.hero-content p {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333; /* Use default dark text color */
+}
+
+/* CTA Buttons Container */
+.hero-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* CTA Button Style */
+.hero-cta-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #F9F7F7; /* Light Gray */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Specific Button Styles */
+.Dodonate-btn {
+    background-color: #3F72AF; /* Blue */
+}
+
+.join-btn {
+    background-color: #3F72AF; /* Light Blue */
+}
+
+/* Hover Effect for Buttons */
+.hero-cta-button:hover {
+    background-color: #112D4E; /* Dark Blue */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Effect for Buttons */
+.hero-cta-button:active {
+    background-color: #0a1e2e; /* Even darker blue */
+    transform: scale(0.95);
+}
+
+/* Focus Effect for Buttons */
+.hero-cta-button:focus {
+    outline: 2px solid #3F72AF; /* Blue outline on focus */
+    outline-offset: 2px;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #DBE2EF; /* Light Blue */
+    padding: 10px 20px;
+    text-align: center;
+    color: #3F72AF; /* Blue */
+}
+
+.about-us img {
+    max-width: 700px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    font-family: 'Kazimir', serif;
+    color: #0a1e2e; /* Blue */
+}
+
+.about-us p {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.5rem;
+    color: #3F72AF; /* Blue */
+    margin-top: 20px;
+}
+
+/* Add a button style for 'Learn More' */
+.about-us .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3F72AF; /* Blue */
+    color: #F9F7F7; /* Light Gray */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-us .cta-button:hover {
+    background-color: #112D4E; /* Dark Blue */
+    transform: scale(1.05);
+}
+
+/* Our Vision Section */
+.our-vision {
+    background-color: #F9F7F7; /* Light Gray */
+    padding: 50px 20px;
+    text-align: center;
+    color: #3F72AF; /* Blue */
+}
+
+.our-vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #112D4E; /* Dark Blue */
+}
+
+.our-vision p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Vision Cards */
+.vision-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.vision-card {
+    background-color: #F9F7F7; /* Light Gray */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vision-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #112D4E; /* Dark Blue */
+}
+.vision-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.vision-cta {
+    margin-top: 30px;
+}
+
+.vision-cta button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3F72AF; /* Adjusted to match palette */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vision-cta button:hover {
+    background-color: #112D4E; /* Adjusted to match palette */
+    transform: scale(1.05);
+}

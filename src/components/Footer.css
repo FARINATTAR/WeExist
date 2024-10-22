@@ -1,0 +1,106 @@
+.footer {
+    background-color: #112D4E; /* Dark blue background */
+    color: #F9F7F7; /* Light text color */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Proxima Nova', sans-serif; /* Consistent font */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Increased space between sections */
+}
+
+.footer-logo img {
+    height: 180px; /* Adjusted logo size */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Add transition for logo hover effect */
+}
+
+.footer-logo img:hover {
+    transform: scale(1.05); /* Slightly enlarge logo on hover */
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center-align links */
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #DBE2EF; /* Light blue color for links */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Add transition for hover effects */
+}
+
+.footer-links a:hover {
+    color: #F9F7F7; /* Light color on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    text-shadow: 0 0 2px #DBE2EF, 0 0 4px #DBE2EF; /* Reduced shine effect */
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center-align social icons */
+    gap: 20px; /* Space between icons */
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #DBE2EF; /* Light blue color for social icons */
+    font-size: 28px; /* Larger icon size */
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Add transition for hover effects */
+}
+
+.social-icon:hover {
+    color: #F9F7F7; /* Light color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+    text-shadow: 0 0 5px #DBE2EF, 0 0 10px #DBE2EF; /* Shine effect */
+}
+
+.footer-bottom {
+    border-top: 1px solid #DBE2EF; /* Light blue border for separation */
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #F9F7F7; /* Light text color */
+    opacity: 0.8; /* Slightly reduced opacity for a subtle look */
+    transition: opacity 0.3s ease; /* Add transition for hover effect */
+}
+
+.footer-bottom:hover p {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #DBE2EF; /* Light blue color for social icons */
+    font-size: 28px; /* Larger icon size */
+    margin: 0 15px; /* Space between icons */
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #F9F7F7; /* Light color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}

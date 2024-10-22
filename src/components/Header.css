@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/path-to-fonts/ProximaNova-Regular.woff2') format('woff2'),
+         url('/path-to-fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #F9F7F7; /* Adjusted to match palette */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo img {
+    height: 70px;
+    transform: scale(1.5);
+    transform-origin: left center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #3F72AF; /* Adjusted to match palette */
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #112D4E; /* Adjusted to match palette */
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.pipe {
+    color: #3F72AF; /* Adjusted to match palette */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-btn, .signup-btn, .donate-btn {
+    text-decoration: none;
+    color: #3F72AF; /* Adjusted to match palette */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    color: #112D4E; /* Adjusted to match palette */
+}
