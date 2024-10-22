@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    background-color: #F9F7F7; /* Adjusted to match palette */
+    background-color: #F9F7F7;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -40,7 +40,7 @@
 
 .nav ul li a {
     text-decoration: none;
-    color: #3F72AF; /* Adjusted to match palette */
+    color: #3F72AF;
     font-family: 'Proxima Nova', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -48,7 +48,7 @@
 }
 
 .nav ul li a:hover {
-    color: #112D4E; /* Adjusted to match palette */
+    color: #112D4E;
 }
 
 .header-buttons {
@@ -59,7 +59,7 @@
 }
 
 .pipe {
-    color: #3F72AF; /* Adjusted to match palette */
+    color: #3F72AF;
     font-size: 20px;
     font-weight: 500;
 }
@@ -76,11 +76,58 @@
 
 .login-btn, .signup-btn, .donate-btn {
     text-decoration: none;
-    color: #3F72AF; /* Adjusted to match palette */
+    color: #3F72AF;
     font-size: 20px;
     font-weight: 500;
 }
 
 .btn:hover {
-    color: #112D4E; /* Adjusted to match palette */
+    color: #112D4E;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f7f7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #3f72af;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c8e2ff;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #112d4e;
+}
+
+/* Arrow Indicator */
+.arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    color: #3F72AF;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
 }
