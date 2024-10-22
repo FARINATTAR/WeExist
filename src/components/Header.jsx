@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../assets/WeExist.png"; 
+import { Link } from "react-router-dom";
+import logo from "../assets/WeExist.png";
 import "./Header.css";
 
 function Header() {
@@ -11,28 +12,28 @@ function Header() {
 
             <nav className="nav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#work">Our Work</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/work">Our Work</Link></li>
                     <li className="dropdown">
-                        <a href="#involved" className="dropbtn">
+                        <Link to="#involved" className="dropbtn">
                             Get Involved <span className="arrow">▼</span>
-                        </a>
+                        </Link>
                         <div className="dropdown-content">
-                            <a href="#volunteer">Volunteer</a>
-                            <a href="#donate">Donate</a>
-                            <a href="#partner">Partner with Us</a>
+                            <Link to="/volunteer">Volunteer</Link>
+                            <Link to="/donate">Donate</Link>
+                            <Link to="/partner">Partner with Us</Link>
                         </div>
                     </li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#faqs">FAQs</a></li>
+                    <li><Link to="/contact">Contact Us</Link></li>
+                    <li><Link to="/faqs">FAQs</Link></li>
                 </ul>
             </nav>
 
-            <div className="header-button">
-                <a href="#signup" className="btn signup-btn">Sign In</a>
+            <div className="header-buttons">
+                <Link to="/signup" className="btn signup-btn">Sign In</Link>
                 <span className="pipe">|</span>
-                <a href="#donate" className="btn donate-btn">Donate</a>
+                <Link to="/donate" className="btn donate-btn">Donate</Link>
             </div>
         </header>
     );

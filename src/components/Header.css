@@ -52,9 +52,9 @@
 }
 
 .header-buttons {
-    display: flex;
+    display: flex; /* Align items side by side */
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Space between the buttons */
     margin-right: 30px;
 }
 
@@ -62,27 +62,34 @@
     color: #3F72AF;
     font-size: 20px;
     font-weight: 500;
+    margin: 0 10px;
 }
 
-.btn {
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.login-btn, .signup-btn, .donate-btn {
+/* Updated Button styles */
+.signup-btn, .donate-btn {
     text-decoration: none;
     color: #3F72AF;
     font-size: 20px;
     font-weight: 500;
+    background: none; /* Remove background */
+    border: none;     /* Remove border */
+    padding: 0;       /* Remove padding */
+    cursor: pointer;  /* Make it clickable */
 }
 
-.btn:hover {
-    color: #112D4E;
+.signup-btn:hover, .donate-btn:hover {
+    color: #112D4E; /* Darker text on hover */
+}
+
+/* Remove any default browser styles */
+.signup-btn, .donate-btn {
+    appearance: none; /* Remove default styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.signup-btn:focus, .donate-btn:focus {
+    outline: none; /* Remove focus outline */
 }
 
 /* Dropdown Styles */

@@ -1,0 +1,101 @@
+/* General Page Styles */
+
+
+.donate-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* background-color: #f4f9f9; Keep this for the form background */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+}
+
+.donate-page h1 {
+    font-size: 36px;
+    color: #112D4E;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.donate-page p {
+    font-size: 18px;
+    color: #3F72AF;
+    margin-bottom: 30px;
+}
+
+/* Donation Form */
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #112D4E;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #3F72AF;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #112D4E;
+    /* background-color: #F9F7F7; */
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #112D4E;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Button */
+.donate-page .btn {
+    background-color: #3F72AF;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donate-page .btn:hover {
+    background-color: #112D4E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donate-page {
+        padding: 10px;
+    }
+
+    .donation-form {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}

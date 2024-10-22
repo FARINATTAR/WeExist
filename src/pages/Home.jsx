@@ -8,7 +8,7 @@ import "./Home.css"
 function Home(){
     return (
         <div>
-        <Header />
+        {/* <Header /> */}
       
         <div className="hero-img">
           <img src={homepageImg} alt="Donating people image" />
@@ -74,7 +74,7 @@ function Home(){
           <button className="cta-button">Learn More</button>
         </section>
       
-        <Footer />
+        {/* <Footer /> */}
       </div>
       
 
