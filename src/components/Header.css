@@ -13,7 +13,7 @@
     justify-content: space-between;
     padding: 15px;
     background-color: #F9F7F7;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -115,7 +115,7 @@
 }
 
 .dropdown-content a:hover {
-    background-color: #c8e2ff;
+    /* background-color: #c8e2ff; */
     color: white;
 }
 
