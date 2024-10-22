@@ -24,6 +24,6 @@ A web-based platform that connects underprivileged communities with individuals 
 ## **How to Run Locally**:
 ```bash
 git clone https://github.com/FARINATTAR/WeExist.git
-cd weexist
+cd WeExist
 npm install
-npm start
+npm run dev
